@@ -3,58 +3,252 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rohit Pawar — Portfolio</title>
-
+<meta name="description" content="Portfolio of Rohit Pawar, Application Engineer specializing in MATLAB, Simulink, EV systems, and control engineering.">
+<meta name="keywords" content="Rohit Pawar, Application Engineer, MATLAB, Simulink, EV, Control Systems, Pune">
+<meta name="author" content="Rohit Pawar">
+<title>Rohit Pawar — Application Engineer & MATLAB Developer</title>
 <link rel="stylesheet" href="style.css">
-
-<!-- Chart.js -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-
 <body>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="ring"></div>
+
+<nav>
+  <div class="nav-logo">rohit.pawar</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="mailto:rohitpawar45.a@gmail.com" class="nav-cta">Let's talk →</a>
+</nav>
+
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="main-content">
   <canvas id="hero-canvas"></canvas>
   <div class="hero-content">
-    <h1>Rohit Pawar</h1>
-    <p>Application Engineer | MATLAB | EV Systems</p>
-    <button class="btn">Explore</button>
+    <div class="hero-label">Application Engineer · MATLAB / Simulink · Pune, India</div>
+    <h1 class="hero-title">
+      Rohit<br><em>Pawar</em><br><span class="outline">Engineer</span>
+    </h1>
+    <p class="hero-tagline">2.5+ years building control systems, EV platforms &amp; signal pipelines with MATLAB/Simulink, Linux, and embedded firmware.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-solid">View work</a>
+      <a href="mailto:rohitpawar45.a@gmail.com" class="btn-outline">rohitpawar45.a@gmail.com →</a>
+    </div>
+  </div>
+  <div class="hero-meta">
+    <p>+91 91568 94275</p>
+    <p>Pune, India</p>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>MATLAB</span><span>·</span><span>Simulink</span><span>·</span><span>EV Systems</span><span>·</span><span>HIL Testing</span><span>·</span><span>Control Systems</span><span>·</span><span>Embedded Firmware</span><span>·</span><span>Signal Processing</span><span>·</span><span>BMS</span><span>·</span><span>Linux / Unix</span><span>·</span><span>Python</span><span>·</span><span>C / C++</span><span>·</span>
+    <span>MATLAB</span><span>·</span><span>Simulink</span><span>·</span><span>EV Systems</span><span>·</span><span>HIL Testing</span><span>·</span><span>Control Systems</span><span>·</span><span>Embedded Firmware</span><span>·</span><span>Signal Processing</span><span>·</span><span>BMS</span><span>·</span><span>Linux / Unix</span><span>·</span><span>Python</span><span>·</span><span>C / C++</span><span>·</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-label">01 — About me</div>
+  <p class="about-intro">
+    Software Development Engineer with <strong>2.5+ years of experience</strong> in object-oriented programming and <strong>control systems</strong>. Proven track record collaborating cross-functionally to define requirements, architecture, and design for <strong>scalable software solutions</strong> in the manufacturing and EV sectors.
+  </p>
+  <p class="about-intro" style="font-size:clamp(14px,1.6vw,17px);color:#555;margin-bottom:0">
+    Expert in leveraging MATLAB/Simulink and Linux/Unix for system modeling, firmware debugging, and hardware-in-the-loop (HIL) testing. Currently working at DesignTech Systems as an Application Engineer for MathWorks.
+  </p>
+  <div class="contact-strip">
+    <div class="contact-chip">rohitpawar45.a@gmail.com</div>
+    <div class="contact-chip">+91 91568 94275</div>
+    <div class="contact-chip">Pune, India</div>
+    <div class="contact-chip"><a href="https://linkedin.com/in/rohit-pawar-831578174" style="color:inherit;text-decoration:none">LinkedIn ↗</a></div>
+  </div>
+  <div class="about-stats">
+    <div class="stat-box">
+      <div class="stat-num">2.5<span style="font-size:20px;color:#555">+</span></div>
+      <div class="stat-sub">Years experience</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">3<span style="font-size:20px;color:#555">+</span></div>
+      <div class="stat-sub">Companies worked at</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">EV<span style="font-size:20px;color:#555">/</span>BMS</div>
+      <div class="stat-sub">Domain expertise</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">HIL</div>
+      <div class="stat-sub">Testing certified</div>
+    </div>
   </div>
 </section>
 
 <!-- SKILLS -->
-<section>
-  <h2>Skills</h2>
-  <canvas id="skillsChart"></canvas>
+<section id="skills">
+  <div class="sec-label">02 — Skills</div>
+  <table class="skills-table" id="skills-table">
+    <tbody>
+      <tr><td class="skill-name">MATLAB / Simulink</td><td><div class="bar-wrap"><div class="bar-fill" data-w="95" style="width:0"></div></div></td><td class="pct">95%</td><td><span class="skill-cat">Core</span></td></tr>
+      <tr><td class="skill-name">Linux / Unix</td><td><div class="bar-wrap"><div class="bar-fill" data-w="85" style="width:0"></div></div></td><td class="pct">85%</td><td><span class="skill-cat">Systems</span></td></tr>
+      <tr><td class="skill-name">Python</td><td><div class="bar-wrap"><div class="bar-fill" data-w="82" style="width:0"></div></div></td><td class="pct">82%</td><td><span class="skill-cat">Language</span></td></tr>
+      <tr><td class="skill-name">C / C++</td><td><div class="bar-wrap"><div class="bar-fill" data-w="75" style="width:0"></div></div></td><td class="pct">75%</td><td><span class="skill-cat">Language</span></td></tr>
+      <tr><td class="skill-name">Git / Jenkins / Docker</td><td><div class="bar-wrap"><div class="bar-fill" data-w="80" style="width:0"></div></div></td><td class="pct">80%</td><td><span class="skill-cat">DevOps</span></td></tr>
+      <tr><td class="skill-name">Control Systems (HIL/EV)</td><td><div class="bar-wrap"><div class="bar-fill" data-w="90" style="width:0"></div></div></td><td class="pct">90%</td><td><span class="skill-cat">Domain</span></td></tr>
+      <tr><td class="skill-name">BMS / Robotics</td><td><div class="bar-wrap"><div class="bar-fill" data-w="78" style="width:0"></div></div></td><td class="pct">78%</td><td><span class="skill-cat">Domain</span></td></tr>
+      <tr><td class="skill-name">MQTT / CAN / I2C / UART</td><td><div class="bar-wrap"><div class="bar-fill" data-w="72" style="width:0"></div></div></td><td class="pct">72%</td><td><span class="skill-cat">Protocols</span></td></tr>
+      <tr><td class="skill-name">Postman / REST APIs</td><td><div class="bar-wrap"><div class="bar-fill" data-w="70" style="width:0"></div></div></td><td class="pct">70%</td><td><span class="skill-cat">Testing</span></td></tr>
+    </tbody>
+  </table>
 </section>
 
 <!-- PROJECTS -->
-<section>
-  <h2>Projects</h2>
-  <div class="proj-card">BMS Testing Framework</div>
-  <div class="proj-card">EV Control Algorithms</div>
-</section>
-
-<!-- ARCHITECTURE -->
-<section>
-  <h2>System Architecture</h2>
-  <div class="arch-grid">
-    <div class="arch-card">
-      <h3>EV Powertrain</h3>
-      <p>Battery → Inverter → Motor → Vehicle</p>
+<section id="projects">
+  <div class="sec-label">03 — Projects</div>
+  <div class="proj-grid">
+    <div class="proj-card">
+      <div class="proj-inner">
+        <span class="proj-idx">001</span>
+        <div class="proj-h">BMS Testing & Validation Framework</div>
+        <p class="proj-p">Custom Python framework to automate testing of Battery Management System boards. Simulates various stress conditions to ensure fail-safe performance across edge cases.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">BMS</span>
+          <span class="proj-tag">Automation</span>
+          <span class="proj-tag">Hardware Testing</span>
+        </div>
+      </div>
     </div>
-    <div class="arch-card">
-      <h3>BMS</h3>
-      <p>Monitoring → SOC → Balancing → Protection</p>
+    <div class="proj-card">
+      <div class="proj-inner">
+        <span class="proj-idx">002</span>
+        <div class="proj-h">Autonomous Robotics System Control</div>
+        <p class="proj-p">Navigation and control module using MATLAB with sensor fusion for real-time obstacle avoidance. Modular control architecture with advanced algorithms for autonomous path planning.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">MATLAB</span>
+          <span class="proj-tag">Sensor Fusion</span>
+          <span class="proj-tag">Robotics</span>
+          <span class="proj-tag">Path Planning</span>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-inner">
+        <span class="proj-idx">003</span>
+        <div class="proj-h">EV Platform Control Algorithms</div>
+        <p class="proj-p">Developed and simulated control algorithms using MATLAB/Simulink for EV platforms, supporting hardware bring-up, board validation, and system-level diagnostics.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Simulink</span>
+          <span class="proj-tag">EV</span>
+          <span class="proj-tag">HIL</span>
+          <span class="proj-tag">Diagnostics</span>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-inner">
+        <span class="proj-idx">004</span>
+        <div class="proj-h">Automated Test Suite (QA)</div>
+        <p class="proj-p">Automated test suites for software feature validation, integrating Jenkins CI and Postman for API testing. Managed version control with Git across multiple hardware stations.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Jenkins</span>
+          <span class="proj-tag">Postman</span>
+          <span class="proj-tag">Git</span>
+          <span class="proj-tag">QA</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SIMULATION -->
-<section>
-  <h2>Live Simulation</h2>
-  <canvas id="simCanvas"></canvas>
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sec-label">04 — Experience</div>
+
+  <div class="exp-item">
+    <div class="exp-date">Jun 2024<br>— Present</div>
+    <div>
+      <div class="exp-role">Application Engineer (MathWorks)</div>
+      <div class="exp-co">DesignTech Systems · Pune, India</div>
+      <ul class="exp-list">
+        <li>Developed and simulated control algorithms using MATLAB/Simulink for EV platforms, supporting hardware bring-up, board validation and system-level diagnostics</li>
+        <li>Collaborated cross-functionally with hardware, QA and architecture teams to define software requirements, review designs and drive test coverage for production-ready builds</li>
+        <li>Participated in code and design reviews focused on testability, modularity and scalability of software architecture</li>
+        <li>Utilized Linux/Unix for firmware development and debugging, ensuring robust performance through cross-compilation and flash programming</li>
+      </ul>
+    </div>
+    <div class="exp-arrow">→</div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-date">Mar 2021<br>— Dec 2022</div>
+    <div>
+      <div class="exp-role">Software Engineer</div>
+      <div class="exp-co">Capgemini</div>
+      <ul class="exp-list">
+        <li>Developed automated test suites ensuring quality and accuracy of software features, collaborating closely with developers and QA teams</li>
+        <li>Utilized debugging tools such as Jenkins and Postman to identify root causes of software bugs and resolve production issues</li>
+        <li>Managed version control using Git, ensuring seamless deployment across multiple hardware stations</li>
+        <li>Designed a navigation and control module using MATLAB, integrating sensor fusion for real-time obstacle avoidance</li>
+      </ul>
+    </div>
+    <div class="exp-arrow">→</div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="sec-label">05 — Education</div>
+  <div class="edu-grid">
+    <div class="edu-card">
+      <div class="edu-deg">Master of Business Administration<br>in Marketing</div>
+      <div class="edu-school">Yashwantrao Chavhan University</div>
+      <div class="edu-date">Aug 2021 — Aug 2023</div>
+      <div class="edu-note">
+        Specialization in Marketing Management<br>
+        Thesis: "Innovations in Sustainable Engineering Practices"
+      </div>
+    </div>
+    <div class="edu-card">
+      <div class="edu-deg">Bachelor of Technology<br>in Electrical Engineering</div>
+      <div class="edu-school">R C Patel Institute of Technology</div>
+      <div class="edu-date">Aug 2017 — Aug 2021</div>
+      <div class="edu-note">
+        Relevant coursework in Electrical Design<br>
+        Foundation for MATLAB, control systems &amp; embedded engineering
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / FOOTER -->
+<section id="contact">
+  <div class="cta-big">
+    Ready to build<br>something <em>great?</em><br><span class="outline">Let's talk.</span>
+  </div>
+  <div class="cta-row">
+    <a href="mailto:rohitpawar45.a@gmail.com" class="btn-solid">rohitpawar45.a@gmail.com →</a>
+    <a href="tel:+919156894275" class="btn-outline">+91 91568 94275</a>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/rohit-pawar-831578174" target="_blank">LinkedIn ↗</a>
+      <a href="mailto:rohitpawar45.a@gmail.com">Email ↗</a>
+      <a href="tel:+919156894275">Phone ↗</a>
+    </div>
+    <div class="footer-copy">© 2026 Rohit Pawar · Pune, India</div>
+  </div>
 </section>
 
 <script src="script.js"></script>
